@@ -11,3 +11,18 @@ function conToInt(str) {
 }
 console.log(conToInt("28"));
 
+let a2 = 35;
+a2 = 55;
+console.log(a2)
+
+function testi() {
+    for (let i=0; i < 5; i++) {
+        let b = 14;
+        console.log(i);
+    }
+    console.log(i);
+
+}
+
+testi();
+console.log(i);
