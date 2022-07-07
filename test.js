@@ -1,4 +1,5 @@
 var sum = 0;
+"use strict";
 for (var i=0; i<5; i++) {
     sum += i;
 }
@@ -25,4 +26,3 @@ function testi() {
 }
 
 testi();
-console.log(i);
