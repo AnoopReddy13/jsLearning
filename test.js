@@ -32,3 +32,8 @@ let result = num.filter(n => n%2 === 0)
                 .map(n => n*2)
                 .reduce((a,b)=>a+b);
 console.log(result);
+
+const realNumberArray = [2,3.5,-5,6,8.3,9];
+
+const squaredIntegers = (arr) => arr.filter(num => Number.isInteger(num) && num >0).map(m => m*m);
+console.log(squaredIntegers(realNumberArray));
