@@ -37,3 +37,26 @@ const realNumberArray = [2,3.5,-5,6,8.3,9];
 
 const squaredIntegers = (arr) => arr.filter(num => Number.isInteger(num) && num >0).map(m => m*m);
 console.log(squaredIntegers(realNumberArray));
+
+/*const increment = function(num, value =1){
+    return num + value;
+};
+const increment1 = increment(5);
+console.log(increment1);*/
+
+const increment = function(){
+    return function increment(num, value =1) {
+        return num + value;
+    }
+};
+const increment2 = increment()(5);
+console.log(increment2);
+//console.log(increment(5));
+
+/*const sum1 = function(){
+    return function sum1(x,y,z) {
+        const args = [x,y,z];
+        return args.reduce((a,b) => a+b);
+    }
+};
+console.log(sum1(1,2,3));*/
