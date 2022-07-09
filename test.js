@@ -49,6 +49,7 @@ const increment = function(){
         return num + value;
     }
 };
+console.log(increment()(7));
 const increment2 = increment()(5);
 console.log(increment2);
 //console.log(increment(5));
@@ -60,3 +61,16 @@ console.log(increment2);
     }
 };
 console.log(sum1(1,2,3));*/
+
+var mulLineString = "This \n\
+is \n\
+a \n\
+multiline \n\
+string";
+
+console.log(mulLineString);
+
+//simple feilds
+
+const createPerson = (name,age,gender) => ({name,age,gender});
+console.log(createPerson("Anoop",24,"Male"));
