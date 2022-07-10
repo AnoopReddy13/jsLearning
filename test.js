@@ -72,5 +72,18 @@ console.log(mulLineString);
 
 //simple feilds
 
+/*const createPerson = (name,age,gender) => {
+    return { 
+        name : name,
+        age : age,
+        gender : gender
+    };
+};*/
 const createPerson = (name,age,gender) => ({name,age,gender});
 console.log(createPerson("Anoop",24,"Male"));
+
+var SpaceShuttle = function(targetPlanet){
+    this.targetPlanet = targetPlanet;
+}
+var zeus = new SpaceShuttle("Jupiter");
+console.log(zeus.targetPlanet);
