@@ -87,3 +87,11 @@ var SpaceShuttle = function(targetPlanet){
 }
 var zeus = new SpaceShuttle("Jupiter");
 console.log(zeus.targetPlanet);
+
+class SpShuttle {
+    constructor(tgtPlanet){
+        this.tgtPlanet = tgtPlanet;
+    }
+};
+var zes = new SpShuttle("Jupiter");
+console.log(zes.targetPlanet);
