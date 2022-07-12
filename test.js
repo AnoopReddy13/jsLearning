@@ -94,4 +94,25 @@ class SpShuttle {
     }
 };
 var zes = new SpShuttle("Jupiter");
-console.log(zes.targetPlanet);
+console.log(zes.tgtPlanet);
+
+function makeClass() {
+    class Thermostat{
+        constructor(temp) {
+            this._temp = 5/9 * (temp - 32);
+        }
+        get temperature() {
+            return this._temp;
+        }
+        set temperature(updatedTemperature) {
+            this._temp = updatedTemperature;
+        }
+    }
+    return Thermostat;
+}
+const Thermostat = makeClass();
+const thermos = new Thermostat(77);
+const temp = thermos.temperature ;
+console.log(thermos, temp);
+thermos.temperature = 40;
+console.log(thermos.temperature);
