@@ -116,3 +116,4 @@ const temp = thermos.temperature ;
 console.log(thermos, temp);
 thermos.temperature = 40;
 console.log(thermos.temperature);
+console.log("thermos");
